@@ -24,23 +24,25 @@ Ollama Installed: Download and install from ollama.com.
 
 Model Pulled: Run the following command in your terminal:
 
-''' Bash
+``` Bash
 ollama pull llama3.1
 Python Environment: Python 3.11+ recommended.
-'''
+```
+
 ##🔧 Installation & Setup
 Clone the repository:
 
-Bash
+``` Bash
 git clone <your-repo-url>
 cd <your-repo-name>
 Install dependencies:
+```
 
-Bash
+``` Bash
 pip install langchain-community pypdf langchain-ollama chromadb langchain-chroma langchain
 Add your PDF:
 Place your PDF file in the root directory. (The notebook is currently configured to look for Think-And-Grow-Rich_2011-06.pdf).
-
+```
 ## 📖 Notebook Workflow
 The main.ipynb follows these logical steps:
 
