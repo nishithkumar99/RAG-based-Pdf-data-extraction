@@ -1,7 +1,7 @@
 #Local PDF RAG with LangChain & Ollama
 This repository contains a Jupyter Notebook implementing a Retrieval-Augmented Generation (RAG) pipeline that allows you to chat with PDF documents locally. The system uses Ollama for both embeddings and the LLM, ensuring your data never leaves your machine.
 
-##🚀 Features
+## 🚀 Features
 Local Processing: Powered by Ollama (llama3.1) for privacy and cost-efficiency.
 
 Vector Store: Uses ChromaDB for persistent document indexing.
