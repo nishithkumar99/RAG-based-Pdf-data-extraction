@@ -35,8 +35,9 @@ Clone the repository:
 ``` Bash
 git clone <your-repo-url>
 cd <your-repo-name>
-Install dependencies:
 ```
+### Install dependencies:
+
 
 ``` Bash
 pip install langchain-community pypdf langchain-ollama chromadb langchain-chroma langchain
@@ -46,15 +47,15 @@ Place your PDF file in the root directory. (The notebook is currently configured
 ## 📖 Notebook Workflow
 The main.ipynb follows these logical steps:
 
-Loading: Uses PyPDFLoader to ingest the document.
+- Loading: Uses PyPDFLoader to ingest the document.
 
-Chunking: Splits the text into 1000-character chunks with a 200-character overlap.
+- Chunking: Splits the text into 1000-character chunks with a 200-character overlap.
 
-Vectorization: Generates embeddings using Ollama and stores them in a local ./chroma_db directory.
+- Vectorization: Generates embeddings using Ollama and stores them in a local ./chroma_db directory.
 
-Tool Creation: Defines a retrieve_context tool that performs similarity searches.
+- Tool Creation: Defines a retrieve_context tool that performs similarity searches.
 
-Agent Execution: An AI Agent receives a query, decides to use the retrieval tool, and provides an answer based on the PDF's content.
+- Agent Execution: An AI Agent receives a query, decides to use the retrieval tool, and provides an answer based on the PDF's content.
 
 ## ⚠️ Troubleshooting
 Connection Error:
