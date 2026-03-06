@@ -57,6 +57,17 @@ The `main.ipynb` follows these logical steps:
 
 - Agent Execution: An AI Agent receives a query, decides to use the retrieval tool, and provides an answer based on the PDF's content.
 
+## Project Structure
+Based on your notebook, here is how your project directory should be organized to run successfully:
+
+- `main.ipynb`: The primary Jupyter Notebook containing the RAG pipeline.
+
+- `Think-And-Grow-Rich_2011-06.pdf`: The source document used for context retrieval.
+
+- `chroma_db/`: A local directory created automatically to persist your vector embeddings.
+
+- `.venv/`: Your Python virtual environment containing the required libraries like langchain and chromadb.
+
 ## ⚠️ Troubleshooting
 Connection Error:
 If you see a `ConnectionError: Failed to connect to Ollama`, ensure the Ollama application is running in the background and that you have pulled the `llama3.1` model.
